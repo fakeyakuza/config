@@ -1,0 +1,26 @@
+# 接続が切れたときに自動的にdetach
+autodetach on
+
+shell bash 
+# ベル関係(基本的に全部切ってる)
+bell_msg "^G"
+vbell off
+# 文字コード
+#defkanji euc-jp
+defencoding utf-8
+#encoding euc-jp
+# screenが保持している行数
+defscrollback 10000
+# C-aのaキーをjキーに変更。ここは好み
+# screenを使い始めたときに某エディタで「C-aはコマンドが被る」と聞いて以来これにしてます
+escape "^Jj"
+# screen起動時に表示されるメッセージをoffにする
+startup_message off
+# screen起動中にscreen番号、screen名、時間などを表示する
+caption always "%{= wb}%-w%{=bu dr}%n %t%{-}%+w %= %{=b wk}[%l]%{=b wb}%y/%m/%d %{=b wm}%c"
+hardstatus always "%{= wb}%-w%{=bu dr}%n %t%{-}%+w %= %{=b wk}[%l]%{=b wb}%y/%m/%d %{=b wm}%c"
+# C-j C-*にコマンドを割り当て
+# man screenでコマンド名も書いてある
+bind n screen bind h prev bind j next bind l windowlist
+#screen size
+:
