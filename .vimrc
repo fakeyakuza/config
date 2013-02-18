@@ -9,16 +9,17 @@ set fileencodings=ucs-bom
 " " ----------------------
 set number
 set ruler
-set cmdheight=2
+set cmdheight=3
 set laststatus=2
 set statusline=%<%f\ %m%r%h%w%{'['.(&fenc!=''?&fenc:&enc).']['.&ff.']'}%=%l,%c%V%8P
 set title
 set linespace=0
 set wildmenu
 set showcmd
-set textwidth=78
-set columns=100
-set lines=150
+set textwidth=80
+set columns=80
+"lines must be set according to the term settings
+set lines=65 "this is for my MBA with iterm2
 colorscheme desert
 set t_Co=256
 set syntax=on 
@@ -36,7 +37,6 @@ set cindent
 set showmatch
 set backspace=indent,eol,start
 set clipboard=unnamed
-set pastetoggle=<F12>
 set guioptions+=a
 
 " tab
