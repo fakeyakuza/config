@@ -16,13 +16,14 @@ set title
 set linespace=0
 set wildmenu
 set showcmd
-set textwidth=78
-set columns=100
-set lines=150
+set textwidth=80
+"set columns=100
+"set lines=150
 colorscheme desert
 set t_Co=256
 set syntax=on 
-"
+set cursorline
+
 " "fold
 " "-------------
 set foldmethod=syntax
@@ -47,5 +48,4 @@ set smarttab
 set shiftwidth=4
 set shiftround
 "set nowrap
-"
 "
