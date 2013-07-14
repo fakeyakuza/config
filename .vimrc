@@ -91,7 +91,6 @@ Bundle 'petdance/vim-perl'
 Bundle 'hotchpotch/perldoc-vim'
 Bundle 'Shougo/neocomplcache'
 Bundle 'Shougo/neosnippet'
-Bundle 'thinca/vim-quickrun'
 
 
 " neocomplcache settings 
